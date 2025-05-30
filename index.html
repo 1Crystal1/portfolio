@@ -15,20 +15,12 @@
 </header>
 
 <main>
-  <!-- Tabs als Buttons -->
-  <div class="tab-buttons">
-    <button onclick="showTab('about')">Über mich</button>
-    <button onclick="showTab('projects')">Projekte</button>
-    <button onclick="showTab('contact')">Kontakt</button>
-  </div>
-
-  <!-- Inhalte -->
-  <section id="about" class="tab-content">
+  <section>
     <h2>Über mich</h2>
     <p>Ich bin ein kreativer Entwickler mit einem Fokus auf moderne, benutzerfreundliche Webseiten. Hier findest du eine Auswahl meiner Arbeiten.</p>
   </section>
 
-  <section id="projects" class="tab-content hidden">
+  <section>
     <h2>Projekte</h2>
     <div class="project">
       <h3>Projekt 1: Portfolio Website</h3>
@@ -42,7 +34,7 @@
     </div>
   </section>
 
-  <section id="contact" class="tab-content hidden">
+  <section>
     <h2>Kontakt</h2>
     <p>Du kannst mich erreichen unter <a href="mailto:deinname@email.de">deinname@email.de</a> oder über <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
   </section>
@@ -51,16 +43,6 @@
 <footer>
   &copy; 2025 Dein Name. Alle Rechte vorbehalten.
 </footer>
-
-<script>
-  function showTab(tabId) {
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => tab.classList.add('hidden'));
-
-    const activeTab = document.getElementById(tabId);
-    if (activeTab) activeTab.classList.remove('hidden');
-  }
-</script>
 
 </body>
 </html>
