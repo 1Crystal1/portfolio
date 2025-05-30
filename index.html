@@ -12,7 +12,16 @@
 <header>
   <h1>Dein Name</h1>
   <p>Webentwickler | Designer | Kreativer Kopf</p>
+  <button id="ueber-mich-btn">Über mich</button>
 </header>
+
+<div id="ueber-mich-text"></div>
+
+<script>
+document.getElementById('ueber-mich-btn').addEventListener('click', function() {
+  document.getElementById('ueber-mich-text').textContent = 'Hier steht später etwas über dich. Dies ist ein Platzhaltertext.';
+});
+</script>
 
 </body>
 </html>
