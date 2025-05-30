@@ -19,7 +19,9 @@
 
 <script>
   document.getElementById('ueber-mich-btn').addEventListener('click', function() {
-    document.getElementById('ueber-mich-text').textContent = 'Hier steht später etwas über dich. Dies ist ein Platzhaltertext.';
+    var ueberMichText = document.getElementById('ueber-mich-text');
+    ueberMichText.textContent = 'Hier steht später etwas über dich. Dies ist ein Platzhaltertext.';
+    ueberMichText.style.display = 'block';
   });
 </script>
 
